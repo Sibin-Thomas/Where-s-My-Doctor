@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/editText6"
+    android:background="@drawable/login"
+    tools:context="com.example.sibinthomas.wheresmydoctor.PatientChat"
+    android:focusableInTouchMode="true">
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/lview"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/lview"
+        android:layout_marginBottom="45dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/button9"
+        android:background="@drawable/textfieldlayout"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:hint="Type your message here"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:background="@drawable/textfieldlayout"
+        android:padding="10dp"
+        android:text="SEND"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/editText6"
+        android:layout_alignBottom="@+id/editText6"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Doctor"
+        android:textColor="@color/buttondefault"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dr."
+        android:textColor="@color/buttondefault"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_above="@+id/lview"
+        android:layout_toLeftOf="@+id/textView23"
+        android:layout_toStartOf="@+id/textView23"
+        android:layout_marginRight="9dp"
+        android:layout_marginEnd="9dp" />
+
+    <ListView
+        android:id="@+id/lview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/editText6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView23"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:divider="@android:color/background_light"
+        android:dividerHeight="1dp" />
+
+</RelativeLayout>
